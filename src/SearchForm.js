@@ -11,6 +11,7 @@ export default class SearchForm extends React.Component {
       items: []
     };
 
+    //this should be auto-populated
     this.userList = [
       {
          "kind": "youtube#searchResult",

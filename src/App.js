@@ -1,9 +1,9 @@
 import React from 'react';
-import SearchForm from "./SearchForm";
+import LoginForm from "./LoginForm";
 
 function App() {
   return (
-    <SearchForm />
+    <LoginForm />
   );
 }
 
