@@ -67,9 +67,10 @@ export default class SearchForm extends React.Component {
       .then(res => res.json())
       .then(
         (result) => {
-          var items = result.items.map(resultItem => {
+            //check if videos are in user list and add a property to indicate
+            var items = result.items.map(resultItem => {
             var found = this.userList.some(userItem => {
-              return userItem.id.videoId == resultItem.id.videoId
+              return userItem.id.videoId === resultItem.id.videoId
             });
 
             if (found) {
@@ -79,7 +80,6 @@ export default class SearchForm extends React.Component {
             return resultItem;
           })
 
-console.log(items);
           //todo: given a list of user selected videos, handle state on search results
           this.setState({
             items: items
