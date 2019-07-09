@@ -51,6 +51,11 @@ export default class SearchForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+
+  filterResult(userList, videoId) {
+
+  }
+
   handleChange(event) {
     this.setState({query: event.target.value})
   }
@@ -62,15 +67,22 @@ export default class SearchForm extends React.Component {
       .then(res => res.json())
       .then(
         (result) => {
-          console.log(result);
-          result.items.map(item => {
-            if (this.userList.indexOf(item) == -1) {
-              console.log('true');
+          var items = result.items.map(resultItem => {
+            var found = this.userList.some(userItem => {
+              return userItem.id.videoId == resultItem.id.videoId
+            });
+
+            if (found) {
+              resultItem.inUserList = true;
             }
+
+            return resultItem;
           })
+
+console.log(items);
           //todo: given a list of user selected videos, handle state on search results
           this.setState({
-            items: result.items
+            items: items
           });
         },
         (error) => {

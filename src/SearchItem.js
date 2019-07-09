@@ -14,8 +14,8 @@ export default class SearchItem extends React.Component {
     return(
       <li>
         <a href={"http://www.youtube.com/watch?v=" + item.id.videoId}>{item.snippet.title}></a>
-        <button onClick={this.addToList}>Add to list</button>
-        <button onClick={this.removeFromList}>Remove from list</button>
+        <button onClick={this.addToList} disabled={item.inUserList}>Add to list</button>
+        <button onClick={this.removeFromList} disabled={!item.inUserList}>Remove from list</button>
       </li>
     );
   }
