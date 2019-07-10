@@ -1,9 +1,23 @@
 import React from 'react';
-import LoginForm from "./LoginForm";
+import './App.scss';
+import SearchForm from "./SearchForm";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 function App() {
   return (
-    <LoginForm />
+    <Router>
+      <div>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+        </ul>
+
+        <hr />
+
+        <Route exact path="/" component={SearchForm} />
+      </div>
+    </Router>
   );
 }
 
