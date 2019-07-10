@@ -18,7 +18,6 @@ function App() {
         <Route exact path="/" component={SearchForm} />
       </div>
     </Router>
-  );
 }
 
 export default App;
