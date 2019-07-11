@@ -1,23 +1,13 @@
 import React from 'react';
 import './App.scss';
 import SearchForm from "./SearchForm";
+import Navigation from "./Navigation"
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-function App() {
+export default function App() {
   return (
     <Router>
-      <div>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-        </ul>
-
-        <hr />
-
-        <Route exact path="/" component={SearchForm} />
-      </div>
+      <Navigation />
+      <Route exact path="/" component={SearchForm} />
     </Router>
-}
-
-export default App;
+)}
