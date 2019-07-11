@@ -1,6 +1,6 @@
 import React from "react";
 import SearchItem from "./SearchItem";
-import { UserList } from "./dummy"
+import { UserList } from "./data/dummy"
 
 const credentials = "AIzaSyD_EnKNxkEHKtqp6JxP3n2rC652fb-vDwY";
 
