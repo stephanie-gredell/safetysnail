@@ -1,10 +1,27 @@
 export const NavigationData = [
   {
-    "name": "home",
-    "url": "/"
+    "name": "KinderVibes",
+    "url": "/",
+    "icon": "home"
   },
   {
-    "name": "youtube",
-    "url": "/search/youtube"
+    "name": "Youtube",
+    "url": "/search/youtube",
+    "icon": ['fab', 'youtube']
+  },
+  {
+    "name": "iOS App Store",
+    "url": "apple",
+    "icon": ['fab', 'apple']
+  },
+  {
+    "name": "Google Play Store",
+    "url": "google",
+    "icon": ['fab', 'google-play']
+  },
+  {
+    "name": "Twitch",
+    "url": "twitch",
+    "icon": ['fab', 'twitch']
   }
 ]
