@@ -3,11 +3,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './RegistrationForm.scss'
 
 export default class RegistrationForm extends React.Component {
+  onSubmit(event) {
+    event.preventDefault();
+    console.log('form submitted')
+  }
   render() {
     return(
       <div class="registration-form">
 
-        <form>
+        <form onSubmit={this.onSubmit}>
           <h1 class="registration-form__header"><FontAwesomeIcon icon="key" className="registration-form__icon"/><i class="fal fa-route-highway"></i>Create Account</h1>
           <input type="text" name="username" placeholder="Username" class="registration-form__input"/>
           <input type="text" name="email"  placeholder="Email address" class="registration-form__input"/>

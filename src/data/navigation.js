@@ -10,18 +10,18 @@ export const NavigationData = [
     "icon": ['fab', 'youtube']
   },
   {
-    "name": "iOS App Store",
-    "url": "apple",
-    "icon": ['fab', 'apple']
+    "name": "Facebook",
+    "url": "facebook",
+    "icon": ['fab', 'facebook']
   },
   {
-    "name": "Google Play Store",
-    "url": "google",
-    "icon": ['fab', 'google-play']
+    "name": "Instagram",
+    "url": "instagram",
+    "icon": ['fab', 'instagram']
   },
   {
-    "name": "Twitch",
-    "url": "twitch",
-    "icon": ['fab', 'twitch']
+    "name": "Twitter",
+    "url": "twitter",
+    "icon": ['fab', 'twitter']
   }
 ]

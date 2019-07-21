@@ -12,7 +12,6 @@ export default class SearchItem extends React.Component {
 
   render() {
     const item = this.props.item;
-    console.log(item);
     return(
       <li className="search-item" key={item.id.videoId}>
         <img src={item.snippet.thumbnails.default.url} className="search-item__image" />
