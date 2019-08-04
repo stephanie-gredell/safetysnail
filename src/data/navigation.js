@@ -1,27 +1,22 @@
 export const NavigationData = [
   {
-    "name": "KinderVibes",
+    "name": "Safety Snail",
     "url": "/",
     "icon": "home"
   },
   {
-    "name": "Youtube",
-    "url": "/search/youtube",
-    "icon": ['fab', 'youtube']
+    "name": "Users",
+    "url": "/users",
+    "icon": "users"
   },
   {
-    "name": "Facebook",
-    "url": "facebook",
-    "icon": ['fab', 'facebook']
+    "name": "Lists",
+    "url": "/lists",
+    "icon": "list-alt"
   },
   {
-    "name": "Instagram",
-    "url": "instagram",
-    "icon": ['fab', 'instagram']
-  },
-  {
-    "name": "Twitter",
-    "url": "twitter",
-    "icon": ['fab', 'twitter']
+    "name": "Settings",
+    "url": "/settings",
+    "icon": "cog"
   }
 ]

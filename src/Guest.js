@@ -8,15 +8,17 @@ export default class Guest extends React.Component {
     return(
       <div className="guest__container">
 
-        <h1 className="guest__header">Kindervibes</h1>
-        <p className="guest__description">Kindervibes is a cross platform software suite to help keep kids safe on the internet.</p>
+        <h1 className="guest__header">Safety Snail</h1>
+        <p className="guest__description">Control what your kids see on the internet.</p>
+        <p className="guest__description">Safety Snail is a suite of tools to limit what your kids are able to see on
+        the internet.</p>
 
         <ul className="guest__features-list">
-          <li className="guest__features-list--item"><FontAwesomeIcon icon="check-square" /> Available on PC, Mac, iOS, and Android</li>
-          <li className="guest__features-list--item"><FontAwesomeIcon icon="check-square" /> Control access from anywhere</li>
-          <li className="guest__features-list--item"><FontAwesomeIcon icon="check-square" /> Set timers to limit use</li>
-          <li className="guest__features-list--item"><FontAwesomeIcon icon="check-square" /> Filter online videos and social media content</li>
+          <li>Support for Firefox and Chrome browsers</li>
+          <li>Use our desktop and mobile apps to show curated content</li>
+          <li>Join our community of other parents</li>
         </ul>
+
         <div className="guest__signup-container">
           <h2 className="guest__sign-up-header">Get on the waiting list!</h2>
 

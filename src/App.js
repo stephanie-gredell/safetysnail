@@ -25,5 +25,8 @@ export default function App() {
       )}/>
       <Route exact path="/login" component={LoginForm} />
       <Route exact path="/register" component={RegistrationForm} />
+      <Route exact path="/settings" component={RegistrationForm} />
+      <Route exact path="/users" component={RegistrationForm} />
+      <Route exact path="/lists" component={RegistrationForm} />
     </Router>
 )}
